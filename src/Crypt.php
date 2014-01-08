@@ -14,12 +14,12 @@ abstract class Crypt
 	{
 		switch ($name) {
 			case 'encrypt':
-				$self = new self();
+				$self = new static();
 				return $self->encrypt($args[0]);
 				break;
 
 			case 'decrypt':
-				$self = new self();
+				$self = new static();
 				return $self->decrypt($args[0]);
 				break;
 
